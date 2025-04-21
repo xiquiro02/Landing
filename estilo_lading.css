@@ -1,98 +1,115 @@
+/*Cuerpo del documento */
 body{
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    background-color: rgb(242, 248, 252);
-    color: #333;
+    margin: 0;                                /* Elimina el margen predeterminado del navegador */
+    padding: 0;                               /* Elimina el relleno interno del body */
+    font-family: "Poppins", sans-serif;       /* Establece la fuente principal como 'Poppins' */
+    font-weight: 200;                         /* Define un peso de fuente liviano */
+    font-style: normal;                       /* Define el estilo de fuente como normal (sin cursiva) */
+    background-color: rgb(242, 248, 252);   /* Color de fondo claro, celeste suave */
+    color: #333;                            /* Color del texto gris muy oscuro */
 }
+/*Encabezado de la página */
 header{
-    background-color: rgb(242, 248, 252);
-    padding:  20px 0;
+    background-color: rgb(242, 248, 252);     /* Mismo fondo que el body */
+    padding:  20px 0;                           /* Relleno vertical de 20px, sin relleno horizontal */
 }
+/*Contenedor Principal de la barra de navegación */
 .Naveg{
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    overflow: hidden;
+    max-width: 1200px;     /* Limita el ancho máximo a 1200px */
+    margin: 0 auto;        /* Centra horizontalmente el contenedor */
+    text-align: center;    /* Centra el contenido dentro del contenedor */
+    overflow: hidden;      /* Oculta cualquier contenido que se desborde */
 }
+/*Zona izquierda de navegación, contiene logo y nombre */
 .InicioNaveg{
-    float: left;
-    display: inline-block;
-    vertical-align: middle;
+    display: inline-block;     /* Se comporta como un bloque en línea */
+    vertical-align: middle;    /* Lo alinea verticalmente en el centro respecto a otros elementos en la misma línea */
 }
+/*Imagen del Logo*/
 .InicioNaveg img{
-    height: 30px;
-    width: auto;
-    vertical-align: middle;
+    height: 30px;              /* Altura fija del logo */
+    width: auto;               /* Ancho proporcional */
+    vertical-align: middle;    /* Centrado vertical respecto al texto */
 }
+/*Nombre del sitio Danvo in a new branch*/
 .InicioNaveg h3{
-    display: inline-block;
-    margin-left: 10px;
-    font-size:  18px;
-    font-weight: 600;
+    display: inline-block;     /* Permite estar en línea con la imagen */
+    margin-left: 10px;         /* Espacio entre la imagen y el texto */
+    font-size:  18px;          /* Tamaño del texto */
+    font-weight: 600;          /* Peso del texto medio-alto (o negrita) */
 }
+/*Zona derecha de la navegación, enlaces y botón*/
 .FinalNaveg{
-    float: right;
-    display: inline-block;
+    display: inline-block;     /* Comportamiento de bloque en línea */
 }
+/*Enlaces de navegación*/
 .FinalNaveg a{
-    text-decoration: none;
-    color: #c4c4c4;
-    margin-left: 20px;
-    font-size: small;
-    line-height: 35px;
+    text-decoration: none;     /* Elimina el subrayado */
+    color: #c4c4c4;          /* Color gris claro */
+    margin-left: 20px;         /* Separación entre enlaces */
+    font-size: small;          /* Tamaño de letra pequeño */
+    line-height: 35px;         /* Altura de línea */
 }
+/*Botón */
 .FinalNaveg button{
-    background-color: rgb(58, 191, 249);
-    color: white; 
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    font-size: small;
-    margin-left: 20px;
+    background-color: rgb(58, 191, 249); /* Fondo Azul claro */
+    color: white;                        /* Texto blanco */
+    padding: 10px 20px;                    /* Espaciado interno */
+    border-radius: 10px;                   /* Bordes redondeados */
+    border: none;                          /* Sin borde */
+    cursor: pointer;                       /* Cambia el cursor a 'mano' al pasar encima */
+    font-size: small;                      /* Tamaño pequeño de texto */
+    margin-left: 20px;                     /* Espacio con el elemento anterior */
 }
+/*Sección principal del contenido*/
 .section{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 50px 0;
-    position: relative;
+    max-width: 1200px;    /* Ancho máximo */
+    margin: 0 auto;       /* Centrado horizontal */
+    padding: 50px 0;      /* Espaciado vertical de 50px */
+    position: relative;   /* Permite a los elementos hijos posicionarse libremente dentro de este contenedor */
 }
+
+/*Mitad izquierda de la sección, texto*/
 .contenedor{
-    width: 50%;
-    text-align: left;
-    float: left;
+    width: 50%;           /* Ocupa la mitad del contenedor padre */
+    text-align: left;     /* Texto alineado a la izquierda */
+    float: left;          /* Se posiciona a la izquierda. Float se usa para hacer que un elemento se desplace hacia un lado dentro de su contenedor */
+    /* El contenido posterior al elemento flotante se moverá a su lado derecho, permitiendo que el diseño fluya de manera flexible. */
 }
+/*Título principal*/
 .contenedor h1{
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 1.2;
-    color: #333;
+    font-size: 36px;      /* Tamaño grande - 36px */
+    font-weight: 600;     /* Texto semi-negrita */
+    line-height: 1.2;     /* Espaciado entre líneas */
+    color: #000;          /* Color negro */
 }
+/*Párrafo debajo del título*/
 .contenedor p{
-    font-size: 16px;
-    color: #a5a4a4;
-    margin-top: 20px;
+    font-size: 16px;      /* Tamaño de texto 16px */
+    color: #a5a4a4;     /* Gris claro */
+    margin-top: 20px;     /* Espacio superior respecto al h1 */
 }
+/*Botón Get Started*/
 .boton{
-    display: inline-block;
-    background-color: rgb(58, 191, 249); 
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
+    display: inline-block;                    /* Permite que el elemento se comporte como un bloque, pero esté alineado en línea con otros elementos */
+    background-color: rgb(58, 191, 249);    /* Fondo Azul claro */
+    color: white;                           /* Texto blanco */
+    border: none;                             /* Sin borde */
+    padding: 10px 20px;                       /* Espaciado interno */
+    border-radius: 10px;                      /* Bordes redondeados */
+    cursor: pointer;                          /* Cambia el cursor a "mano" */
+    font-size: 16px;                          /* Tamaño de fuente 16px */
+    margin-top: 20px;                         /* Espacio arriba 20px */
 }
+/*Contenedor de imagen, lado derecho*/
 .Imagen_contai{
-    width: 50%;
-    float: right;
-    text-align: right;
+    width: 50%;           /* Ocupa la otra mitad */
+    float: right;         /* Se posiciona a la derecha */
+    text-align: right;    /* Alineación del contenido a la derecha */
 }
+
+/*Imagen dentro del contenedor*/
 .Imagen_contai img{
-    max-width: 100%;
-    border-radius: 20px;
+    max-width: 100%;      /* El ancho del elemento no excede el 100% del contenedor, pero se escala hacia abajo si es necesario */
+    border-radius: 20px;  /* Esquinas redondeadas */
 }
